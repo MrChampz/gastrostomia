@@ -2,6 +2,20 @@ import styled from 'styled-components';
 import { Button, FormControl } from 'react-bootstrap';
 import { Search } from '@styled-icons/heroicons-outline';
 
+export const Styles = styled.div`
+  .navbar {
+    background-color: #FAFAFA;
+    margin: 0;
+  }
+
+  .form-center {
+    display: inline-flexbox;
+    position: absolute !important;
+    left: 40%;
+    right: 40%;
+  }
+`;
+
 export const Logo = styled.a`
   font-family: 'Fredoka One';
   font-size: 38px;
