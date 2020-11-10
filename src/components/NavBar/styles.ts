@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { Button, FormControl } from 'react-bootstrap';
 import { Search } from '@styled-icons/heroicons-outline';
 
@@ -8,11 +9,13 @@ export const Styles = styled.div`
     margin: 0;
   }
 
-  .form-center {
+  .form {
     display: inline-flexbox;
-    position: absolute !important;
-    left: 40%;
-    right: 40%;
+    margin: 0 auto;
+
+    ${ media.lessThan('medium')`
+      margin: 0;
+    `}
   }
 `;
 
@@ -29,7 +32,6 @@ export const Logo = styled.a`
 
 export const SearchField = styled(FormControl)`
   margin-right: 8px;
-  min-width: 300px;
   height: 38px;
   
   border-width: 2px;
@@ -43,6 +45,10 @@ export const SearchField = styled(FormControl)`
     color: "#C4C4C4";
     opacity: 1;
   }
+
+  ${ media.lessThan('medium')`
+    display: none;
+  `}
 `;
 
 export const SearchButton = styled(Button)`
@@ -55,6 +61,10 @@ export const SearchButton = styled(Button)`
 export const DownloadButton = styled(Button)`
   height: 38px;
   border-radius: 13px;
+
+  ${ media.lessThan('medium')`
+    display: none;
+  `}
 `;
 
 export const SearchIcon = styled(Search)`

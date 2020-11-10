@@ -1,14 +1,21 @@
 import React from 'react';
 import { Navbar, Form } from 'react-bootstrap';
 
-import { Styles, Logo, SearchField, SearchButton, DownloadButton, SearchIcon } from './styles';
+import {
+  Styles,
+  Logo,
+  SearchField,
+  SearchButton,
+  DownloadButton,
+  SearchIcon
+} from './styles';
 
 export default function NavBar() {
   return (
     <Styles>
       <Navbar expand="lg">
           <Logo href="">Gastrostomia</Logo>
-          <Form className="form-center">
+          <Form className="form">
             <SearchField type="text" placeholder="Comece digitando algo.." className="" />
             <SearchButton>
               <SearchIcon size={ 24 } />
