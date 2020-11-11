@@ -5,8 +5,11 @@ import { Search } from '@styled-icons/heroicons-outline';
 
 export const Styles = styled.div`
   .navbar {
-    background-color: #FAFAFA;
+    display: flex;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FAFAFA;
   }
 
   .form {
@@ -14,15 +17,28 @@ export const Styles = styled.div`
     margin: 0 auto;
 
     ${ media.lessThan('medium')`
-      margin: 0;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
     `}
+  }
+
+  .show {
+    max-width: 100%;
+  }
+
+  .hide {
+    max-width: 0;
   }
 `;
 
 export const Logo = styled.a`
   font-family: 'Fredoka One';
   font-size: 38px;
+  line-height: 0;
   color: black;
+
+  transition: max-width .4s cubic-bezier(1.0, 0.86, 0.0, 1.0);
 
   &:hover {
     color: black;
@@ -42,11 +58,11 @@ export const SearchField = styled(FormControl)`
   height: 38px;
   
   border-width: 2px;
-  border-color: "#C4C4C4";
+  border-color: #C4C4C4;
   border-radius: 13px;
 
   font-family: 'Roboto';
-  color: "#000000";
+  color: #000000;
 
   ::placeholder, ::-ms-input-placeholder {
     color: "#C4C4C4";
@@ -54,20 +70,19 @@ export const SearchField = styled(FormControl)`
   }
 
   ${ media.lessThan('medium')`
-    position: absolute;
+    margin-right: -38px;
     width: 38px;
 
-    transition: all .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
     opacity: 0;
     z-index: 5;
+    cursor: pointer;
+
+    transition: all .4s cubic-bezier(1.0, 0.86, 0.0, 1.0);
     
     &:focus {
-      width: 81%;
+      flex: 1;
       opacity: 1;
-
-      transform: translate(-102%, 0);
-      -webkit-transform: translate(-102%, 0);
-      -ms-transform: translate(-102%, 0);
+      cursor: text;
     }
 
     &:focus ~ ${ SearchButton } {
