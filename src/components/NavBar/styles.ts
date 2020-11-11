@@ -30,6 +30,13 @@ export const Logo = styled.a`
   }
 `;
 
+export const SearchButton = styled(Button)`
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+`;
+
 export const SearchField = styled(FormControl)`
   margin-right: 8px;
   height: 38px;
@@ -47,113 +54,24 @@ export const SearchField = styled(FormControl)`
   }
 
   ${ media.lessThan('medium')`
-
-    font-family: 'Inconsolata', monospace;
     position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    outline: none;
-    border: none;
-    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: crimson;
-    color: white;
-    text-shadow: 0 0 10px crimson;
-    padding: 0 80px 0 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 25px 0 crimson,
-                0 20px 25px 0 rgba(0, 0, 0, 0.2);
-    // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
-    transition: all 1s;
-    opacity: 100;
+    width: 38px;
+
+    transition: all .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    opacity: 0;
     z-index: 5;
-    font-weight: bolder;
-    letter-spacing: 0.1em;
-    &:hover {
-      cursor: pointer;
-    }
+    
     &:focus {
-      width: 300px;
+      width: 81%;
       opacity: 1;
-      cursor: text;
+
+      transform: translate(-102%, 0);
+      -webkit-transform: translate(-102%, 0);
+      -ms-transform: translate(-102%, 0);
     }
-    &:focus ~ .search {
-      right: -250px;
-      background: #151515;
+
+    &:focus ~ ${ SearchButton } {
       z-index: 6;
-      &::before {
-        top: 0;
-        left: 0;
-        width: 25px;
-      }
-      &::after {
-        top: 0;
-        left: 0;
-        width: 25px;
-        height: 2px;
-        border: none;
-        background: white;
-        border-radius: 0%;
-        transform: rotate(-45deg);
-      }
-    }
-  `}
-`;
-
-export const SearchButton = styled(Button)`
-  padding: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 13px;
-
-  ${ media.lessThan('medium')`
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 80px;
-    background: crimson;
-    border-radius: 50%;
-    transition: all 1s;
-    z-index: 4;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-    &:hover {
-      cursor: pointer;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      margin: auto;
-      top: 22px;
-      right: 0;
-      bottom: 0;
-      left: 22px;
-      width: 12px;
-      height: 2px;
-      background: white;
-      transform: rotate(45deg);
-      transition: all .5s;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      margin: auto;
-      top: -5px;
-      right: 0;
-      bottom: 0;
-      left: -5px;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      border: 2px solid white;
-      transition: all .5s;
     }
   `}
 `;
