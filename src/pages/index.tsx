@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap";
 
-import { Styles } from "./styles";
+import { Styles, Pages } from "./styles";
 import NavBar from "../components/NavBar";
 import Home from './Home';
 
@@ -10,7 +10,9 @@ export default function App() {
     <Styles>
       <Container fluid>
         <NavBar />
-        <Home />
+        <Pages>
+          <Home />
+        </Pages>
       </Container>
     </Styles>  
   );
