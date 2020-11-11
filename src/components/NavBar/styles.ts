@@ -15,7 +15,7 @@ export const Styles = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background-color: #FAFAFA;
+    background: #FAFAFA;
   }
 
   .form {

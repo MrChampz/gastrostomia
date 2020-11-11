@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
+  html, div {
+    background: #FAFAFA;
+  }
+`;
 
 export const Styles = styled.div`
   .container-fluid {
