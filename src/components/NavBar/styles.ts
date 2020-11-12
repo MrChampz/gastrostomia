@@ -22,7 +22,7 @@ export const Styles = styled.div`
     display: inline-flexbox;
     margin: 0 auto;
 
-    ${media.lessThan('medium')`
+    ${ media.lessThan('medium')`
       flex: 1;
       display: flex;
       justify-content: flex-end;
@@ -75,7 +75,7 @@ export const SearchField = styled(FormControl)`
     opacity: 1;
   }
 
-  ${media.lessThan('medium')`
+  ${ media.lessThan('medium')`
     margin-right: -38px;
     width: 38px;
 
@@ -101,7 +101,7 @@ export const DownloadButton = styled(Button)`
   height: 38px;
   border-radius: 13px;
 
-  ${media.lessThan('medium')`
+  ${ media.lessThan('medium')`
     display: none;
   `}
 `;
