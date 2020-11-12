@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap";
 
-import { Styles } from './styles';
+import { Styles } from '../../styles/Home/styles';
 import { PostCard, DownloadCard } from "../../components";  
 
 export default function Home() {
