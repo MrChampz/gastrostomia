@@ -1,10 +1,21 @@
 import React from "react"
 import { Container } from "react-bootstrap";
 
+import { Styles } from './styles';
+import { PostCard, DownloadCard } from "../../components";  
+
 export default function Home() {
   return (
-    <Container style={{ backgroundColor: 'red' }}>
-      Vamos de H1
-    </Container>
+    <Styles>
+      <Container>
+        <DownloadCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+      </Container>
+    </Styles>
   );
 }

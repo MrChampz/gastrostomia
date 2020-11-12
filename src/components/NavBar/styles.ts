@@ -5,8 +5,17 @@ import { Search } from '@styled-icons/heroicons-outline';
 
 export const Styles = styled.div`
   .navbar {
-    background-color: #FAFAFA;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background: #FAFAFA;
   }
 
   .form {
@@ -14,15 +23,28 @@ export const Styles = styled.div`
     margin: 0 auto;
 
     ${ media.lessThan('medium')`
-      margin: 0;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
     `}
+  }
+
+  .show {
+    max-width: 100%;
+  }
+
+  .hide {
+    max-width: 0;
   }
 `;
 
 export const Logo = styled.a`
   font-family: 'Fredoka One';
   font-size: 38px;
+  line-height: 0;
   color: black;
+
+  transition: max-width .4s cubic-bezier(1.0, 0.86, 0.0, 1.0);
 
   &:hover {
     color: black;
@@ -30,16 +52,23 @@ export const Logo = styled.a`
   }
 `;
 
+export const SearchButton = styled(Button)`
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+`;
+
 export const SearchField = styled(FormControl)`
   margin-right: 8px;
   height: 38px;
   
   border-width: 2px;
-  border-color: "#C4C4C4";
+  border-color: #C4C4C4;
   border-radius: 13px;
 
   font-family: 'Roboto';
-  color: "#000000";
+  color: #000000;
 
   ::placeholder, ::-ms-input-placeholder {
     color: "#C4C4C4";
@@ -47,15 +76,25 @@ export const SearchField = styled(FormControl)`
   }
 
   ${ media.lessThan('medium')`
-    display: none;
-  `}
-`;
+    margin-right: -38px;
+    width: 38px;
 
-export const SearchButton = styled(Button)`
-  padding: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 13px;
+    opacity: 0;
+    z-index: 5;
+    cursor: pointer;
+
+    transition: all .4s cubic-bezier(1.0, 0.86, 0.0, 1.0);
+    
+    &:focus {
+      flex: 1;
+      opacity: 1;
+      cursor: text;
+    }
+
+    &:focus ~ ${SearchButton} {
+      z-index: 6;
+    }
+  `}
 `;
 
 export const DownloadButton = styled(Button)`
