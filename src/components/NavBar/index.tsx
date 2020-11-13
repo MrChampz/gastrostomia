@@ -18,7 +18,7 @@ export default function NavBar() {
 
   const [showLogo, setShowLogo] = useState(true);
   const [showBtnDownload, setShowBtnDownload] = useState(false);
-  const [showNavBarShadow, setShowNavBarShadow] = useState(false);
+  const [showShadow, setShowShadow] = useState(false);
 
   useEffect(() => {
     window.onscroll = onPageScroll;
@@ -38,18 +38,24 @@ export default function NavBar() {
 
   const onPageScroll = (event) => {
     let offset = event.target.documentElement.scrollTop;
+    if (offset == 0) {
+      setShowShadow(false);
+    }
+    if (offset > 0) {
+      setShowShadow(true);
+    }
     if (offset < 273) {
       setShowBtnDownload(false);
     }
-    if (offset >= 273) { // TODO: && !isSmallScreen
+    if (offset >= 273) {
       setShowBtnDownload(true);
     }
   }
 
   return (
     <Styles>
-      <Navbar expand="lg">
-        <Logo href="" className={ showLogo ? "show" : "hide" }>
+      <Navbar expand="lg" className={ showShadow ? 'shadow' : 'no-shadow' }>
+        <Logo href="" className={ showLogo ? 'show' : 'hide' }>
           Gastrostomia
         </Logo>
         <Form className="form">
