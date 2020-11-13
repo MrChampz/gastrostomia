@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { Button } from 'react-bootstrap';
 
 export const Styles = styled.div`
   margin: 35px 0;
@@ -10,7 +9,7 @@ export const Styles = styled.div`
   display: flex;
   flex-direction: row;
 
-  ${ media.lessThan('medium')`
+  ${media.lessThan('medium')`
     margin: 60px 0;
 
     flex-direction: column;
@@ -30,16 +29,30 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  .button {
+    margin-left: auto;
+    margin-top: -20px;
+
+    ${media.lessThan('medium')`
+      margin-top: 0;
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    `}
+  }
 `;
 
 export const Title = styled.p`
   margin-top: 20px;
 
-  font-family: 'Itim';
+  font-family: 'Bebas Neue';
   font-size: 35px;
   color: black;
 
-  ${ media.lessThan('medium')`
+  ${media.lessThan('medium')`
     margin-top: 0;
   `}
 `;
@@ -49,15 +62,4 @@ export const Description = styled.p`
   font-family: 'Roboto';
   font-size: 18px;
   color: #6B6B6B;
-`
-
-export const DownloadButton = styled(Button)`
-  margin-top: -20px;
-  height: 38px;
-  border-radius: 13px;
-
-  ${ media.lessThan('medium')`
-    margin-top: 0;
-    width: 100%;
-  `}
 `;

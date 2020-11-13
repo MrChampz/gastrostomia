@@ -97,15 +97,6 @@ export const SearchField = styled(FormControl)`
   `}
 `;
 
-export const DownloadButton = styled(Button)`
-  height: 38px;
-  border-radius: 13px;
-
-  ${ media.lessThan('medium')`
-    display: none;
-  `}
-`;
-
 export const SearchIcon = styled(Search)`
   color: "#C4C4C4";
 `;

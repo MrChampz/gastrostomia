@@ -3,12 +3,13 @@ import { useMedia } from 'react-media';
 import { Navbar, Form } from 'react-bootstrap';
 import { MediaQueries } from '../../utils/config';
 
+import { DownloadButton } from '../';
+
 import {
   Styles,
   Logo,
   SearchField,
   SearchButton,
-  DownloadButton,
   SearchIcon
 } from './styles';
 
@@ -37,10 +38,10 @@ export default function NavBar() {
 
   const onPageScroll = (event) => {
     let offset = event.target.documentElement.scrollTop;
-    if (offset < 325 && showBtnDownload) {
+    if (offset < 273) {
       setShowBtnDownload(false);
     }
-    if (offset >= 325 && !showBtnDownload) {
+    if (offset >= 273) { // TODO: && !isSmallScreen
       setShowBtnDownload(true);
     }
   }
@@ -62,12 +63,11 @@ export default function NavBar() {
             <SearchIcon size={ 24 } />
           </SearchButton>
         </Form>
-          <DownloadButton
-            visible={ showBtnDownload ? 'true' : 'false' }
-            className="ml-auto"
-          >
-            Baixar Cartilha
-          </DownloadButton>
+        <DownloadButton
+          showIcon
+          showButton={ showBtnDownload }
+          showContainer={ !isSmallScreen }
+        />
       </Navbar>
     </Styles>
   );
