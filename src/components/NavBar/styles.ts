@@ -16,6 +16,10 @@ export const Styles = styled.div`
     padding-bottom: 20px;
 
     background: #FAFAFA;
+
+    transition: all 0.1s ease-in;
+
+    border-bottom: 1px solid #EBEBEB;
   }
 
   .form {
@@ -35,6 +39,18 @@ export const Styles = styled.div`
 
   .hide {
     max-width: 0;
+  }
+
+  .shadow {
+    -webkit-box-shadow: 0 0px 3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 0px 3px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  }
+
+  .no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 `;
 
@@ -63,7 +79,7 @@ export const SearchField = styled(FormControl)`
   margin-right: 8px;
   height: 38px;
   
-  border-width: 2px;
+  border-width: 1px;
   border-color: #C4C4C4;
   border-radius: 13px;
 
@@ -94,15 +110,6 @@ export const SearchField = styled(FormControl)`
     &:focus ~ ${SearchButton} {
       z-index: 6;
     }
-  `}
-`;
-
-export const DownloadButton = styled(Button)`
-  height: 38px;
-  border-radius: 13px;
-
-  ${ media.lessThan('medium')`
-    display: none;
   `}
 `;
 

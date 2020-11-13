@@ -23,6 +23,10 @@ module.exports = {
             family: `Itim`,
             variants: [`400`]
           },
+          {
+            family: `Bebas Neue`,
+            variants: [`400`]
+          }
         ],
       },
     },
