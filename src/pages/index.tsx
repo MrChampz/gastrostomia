@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 import { GlobalStyles, Styles, Pages } from "../styles/Global/styles";
 import { NavBar, Footer } from "../components";
-import Home from './Home';
+import Home from './home';
 
 export default function App() {
   return (
