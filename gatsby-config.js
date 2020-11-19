@@ -8,25 +8,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `700`]
-          },
-          {
-            family: `Fredoka One`,
-            variants: [`400`]
-          },
-          {
-            family: `Itim`,
-            variants: [`400`]
-          },
-          {
-            family: `Bebas Neue`,
-            variants: [`400`]
-          }
+          `Roboto\:400,700`,
+          `Fredoka One\:400`,
+          `Itim\:400`,
+          `Bebas Neue\:400`,
         ],
       },
     },
