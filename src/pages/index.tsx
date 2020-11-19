@@ -2,7 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap";
 
 import { GlobalStyles, Styles, Pages } from "../styles/Global/styles";
-import NavBar from "../components/NavBar";
+import { NavBar, Footer } from "../components";
 import Home from './Home';
 
 export default function App() {
@@ -14,6 +14,7 @@ export default function App() {
         <Pages>
           <Home />
         </Pages>
+        <Footer />
       </Container>
     </Styles>
   );

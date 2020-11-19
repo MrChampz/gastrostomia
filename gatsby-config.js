@@ -13,7 +13,7 @@ module.exports = {
         fonts: [
           {
             family: `Roboto`,
-            variants: [`400`]
+            variants: [`400`, `700`]
           },
           {
             family: `Fredoka One`,

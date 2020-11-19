@@ -55,7 +55,7 @@ export const Styles = styled.div`
 `;
 
 export const Logo = styled.a`
-  font-family: 'Fredoka One';
+  font-family: 'Bebas Neue';
   font-size: 38px;
   line-height: 0;
   color: black;
@@ -73,6 +73,10 @@ export const SearchButton = styled(Button)`
   width: 38px;
   height: 38px;
   border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const SearchField = styled(FormControl)`
@@ -114,5 +118,5 @@ export const SearchField = styled(FormControl)`
 `;
 
 export const SearchIcon = styled(Search)`
-  color: "#C4C4C4";
+  color: #FFFFFF;
 `;
