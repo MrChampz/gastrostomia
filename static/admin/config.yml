@@ -10,10 +10,9 @@ collections:
     folder: content/posts
     create: true
     fields:
-      - { name: path, label: Caminho }
-      - { name: title, label: Título }
-      - { name: description, label: Descrição }
-      - { name: topic, label: Tópico }
+      - { name: title, label: Título, widget: string }
+      - { name: description, label: Descrição, widget: string }
+      - { name: topic, label: Tópico, widget: string }
       - { name: thumb, label: Thumb, widget: image }
-      - { name: date, label: Data }
+      - { name: date, label: Data, widget: datetime }
       - { name: body, label: Corpo, widget: markdown }
