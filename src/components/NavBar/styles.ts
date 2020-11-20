@@ -17,10 +17,10 @@ export const Styles = styled.div`
     padding-bottom: 20px;
 
     background: #FAFAFA;
+    border-bottom: 1px solid #EBEBEB;
 
     transition: all 0.1s ease-in;
-
-    border-bottom: 1px solid #EBEBEB;
+    z-index: 999;
   }
 
   .form {

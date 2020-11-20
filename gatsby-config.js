@@ -51,7 +51,6 @@ module.exports = {
                   title
                   description
                   topic
-                  date
                 }
               }
             }
@@ -59,7 +58,7 @@ module.exports = {
         `,
         ref: "id",
         index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description", "topic"],
+        store: ["id", "slug", "title", "excerpt", "description", "topic"],
         normalizer: ({ data }) =>
           data.allMdx.nodes.map(node => ({
             id: node.id,
@@ -69,7 +68,6 @@ module.exports = {
             title: node.frontmatter.title,
             description: node.frontmatter.description,
             topic: node.frontmatter.topic,
-            date: node.frontmatter.date,
           })),
       },
     },
@@ -96,9 +94,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              backgroundColor: "none",
+              disableBgImage: true,
+              linkImagesToOriginal: false
             },
           },
+          `gatsby-remark-image-attributes`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {

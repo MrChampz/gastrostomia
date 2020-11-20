@@ -2,7 +2,7 @@
 title: Hello World
 description: "Tuts Tuts"
 topic: "cuidados"
-thumb: ""
+thumb: ../../assets/menino.png
 date: "2015-05-01T22:12:03.284Z"
 ---
 

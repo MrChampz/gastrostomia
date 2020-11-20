@@ -10,8 +10,6 @@ import {
   Description,
 } from './styles';
 
-import menino from '../../../content/assets/menino.png';
-
 export default function PostCard({ post }) {
   const link = `/posts${ post.fields.slug }`;
   const data = post.frontmatter;
@@ -19,7 +17,7 @@ export default function PostCard({ post }) {
   return (
     <Styles>
       <ImageContainer>
-        <Image src={ menino } alt={ data.title } />
+        <Image src={ data.thumb.publicURL } alt={ data.title } />
       </ImageContainer>
       <Content>
         <Topic>{ data.topic }</Topic>

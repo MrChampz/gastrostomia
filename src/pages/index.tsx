@@ -45,8 +45,10 @@ export const pageQuery = graphql`
             title
             description
             topic
-            thumb
             date
+            thumb {
+              publicURL
+            }
           }
         }
       }
