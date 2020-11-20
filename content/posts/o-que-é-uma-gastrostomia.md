@@ -12,6 +12,6 @@ date: 2020-11-20T17:46:13.506Z
 
 ![Menino](../assets/menino.png "Menino")
 
-\
-\
+
+
 Atualmente existem dois tipos de dispositivos, o botton e o cateter de gastrostomia. A gastrostomia é realizada através de um procedimento cirúrgico ou endoscópico, com uso de anestesia. A substituição do cateter pelo botton pode ser feita no centro cirúrgico ou ambulatorialmente, dependendo da indicação médica, da disponibilidade na instituição ou da compra do dispositivo pela família.
