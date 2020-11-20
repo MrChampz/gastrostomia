@@ -18,6 +18,7 @@ export const Styles = styled.div`
 `;
 
 export const Image = styled.img`
+  margin-left: 10px;
   width: 200px;
   height: 200px;
 `;

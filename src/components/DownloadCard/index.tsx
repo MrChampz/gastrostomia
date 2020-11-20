@@ -10,7 +10,8 @@ import {
   Description,
 } from './styles';
 
-import menino from '../../../content/assets/menino.png';
+//import menino from '../../../content/assets/menino.png';
+import menino from '../../../static/logo.svg';
 
 export default function DownloadCard() {
   return (

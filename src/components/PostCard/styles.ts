@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import { Link } from 'gatsby';
 
 export const Styles = styled.div`
   margin: 35px 0;
@@ -56,7 +57,7 @@ export const Topic = styled.div`
   border-radius: 13px;
 `;
 
-export const Title = styled.a`
+export const Title = styled(Link)`
   margin-top: 10px;
 
   font-family: 'Itim';

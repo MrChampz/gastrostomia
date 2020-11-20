@@ -55,7 +55,7 @@ export default function NavBar() {
   return (
     <Styles>
       <Navbar expand="lg" className={ showShadow ? 'shadow' : 'no-shadow' }>
-        <Logo href="" className={ showLogo ? 'show' : 'hide' }>
+        <Logo to="/" className={ showLogo ? 'show' : 'hide' }>
           Gastrostomia
         </Logo>
         <Form className="form">

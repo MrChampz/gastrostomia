@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import media from 'styled-media-query';
+import { Container } from 'react-bootstrap';
 
 export const GlobalStyles = createGlobalStyle`
   html, div {
@@ -26,6 +27,6 @@ export const Styles = styled.div`
   }
 `;
 
-export const Pages = styled.div`
+export const Page = styled(Container)`
   margin-top: 100px;
 `;

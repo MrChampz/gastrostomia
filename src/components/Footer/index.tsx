@@ -17,7 +17,7 @@ export default function Footer() {
         <Link>UpCO</Link>
       </Container>
       <Container>
-        <Text>© 2020</Text>
+        <Text>© { new Date().getFullYear() }</Text>
         <Link>Gastrostomia</Link>
       </Container>
       <Container>

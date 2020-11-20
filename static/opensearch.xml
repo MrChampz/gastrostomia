@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Gastrostomia</ShortName>
+  <Description>Site institucional direcionado ao público com Gastrostomia</Description>
+  <Url type="text/html" method="get" template="https://gastrostomia.netlify.app/?search={searchTerms}"/>
+</OpenSearchDescription>

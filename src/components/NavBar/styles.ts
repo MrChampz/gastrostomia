@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import { Link } from 'gatsby';
 import { Button, FormControl } from 'react-bootstrap';
 import { Search } from '@styled-icons/heroicons-outline';
 
@@ -54,7 +55,7 @@ export const Styles = styled.div`
   }
 `;
 
-export const Logo = styled.a`
+export const Logo = styled(Link)`
   font-family: 'Bebas Neue';
   font-size: 38px;
   line-height: 0;

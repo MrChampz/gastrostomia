@@ -12,20 +12,19 @@ import {
 
 import menino from '../../../content/assets/menino.png';
 
-export default function PostCard() {
+export default function PostCard({ post }) {
+  const link = `/posts${ post.fields.slug }`;
+  const data = post.frontmatter;
+
   return (
     <Styles>
       <ImageContainer>
-        <Image src={ menino } alt="Thumb do post" />
+        <Image src={ menino } alt={ data.title } />
       </ImageContainer>
       <Content>
-        <Topic>Cuidados</Topic>
-        <Title href="#">Direitos da Criança com Gastrostomia</Title>
-        <Description>
-          Você sabia que a criança com gastrostomia tem direitos?
-          Venha conhecer todos os seus direitos, desde de antes da
-          cirurgia até o retorno das atividades em casa.
-        </Description>
+        <Topic>{ data.topic }</Topic>
+        <Title to={ link }>{ data.title }</Title>
+        <Description>{ data.description }</Description>
       </Content>
     </Styles>
   );
