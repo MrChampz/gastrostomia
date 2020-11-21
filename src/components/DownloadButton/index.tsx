@@ -1,13 +1,19 @@
 import React from 'react';
 import { Container, Button, DownloadIcon } from './styles';
 
+import file from '../../../static/files/cartilha.pdf';
+
 export default function DownloadButton(props) {
   const { showContainer, showButton, showIcon, className } = props;
   
   return (
     showContainer &&
       <Container className={ className }>
-        <Button className={ 'ml-auto' + (showButton ? 'visible' : ' invisible') }>
+        <Button
+          href={ file }
+          target="_blank"
+          className={ 'btn btn-primary ' + (showButton ? 'visible' : ' invisible') }
+        >
           { showIcon && (
             <DownloadIcon size={ 20 } />
           )}

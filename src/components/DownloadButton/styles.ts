@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Button as BsButton } from 'react-bootstrap';
 import { CloudDownloadOutline as Download } from '@styled-icons/evaicons-outline';
 
 export const Container = styled.div`
@@ -14,7 +13,8 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled(BsButton)`
+export const Button = styled.a`
+  margin-left: auto;
   height: 38px;
   border-radius: 13px;
   transition: all 0.1s ease-in;
