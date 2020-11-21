@@ -1,5 +1,5 @@
 ---
-title: O que é uma Gastrostomia?
+title: Por que que tenho uma Gastrostomia?
 description: "Neste tópico, você poderá entender o motivo que levam as crianças
   a realizarem este procedimento. "
 topic: o que é?
