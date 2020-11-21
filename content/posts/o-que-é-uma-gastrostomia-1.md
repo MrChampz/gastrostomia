@@ -12,4 +12,4 @@ A gastrostomia proporciona melhor qualidade de vida, diminui o risco de pneumoni
 
 Através da gastrostomia pode ser administrado um volume maior de alimentação, de forma mais prática e segura, podendo ser realizada pelo cuidador ou até pela própria pessoa com a gastrostomia. A manipulação do cateter de gastrostomia ou do botton é fácil, além de serem mais discretos que o cateter localizado no nariz ou boca.
 
-![Por que que tenho uma Gastrostomia?](../assets/por_que_tenho_uma_gastrostomia.png "Por que que tenho uma Gastrostomia?")
+![Por que que tenho uma Gastrostomia?](../assets/por_que_tenho_uma_gastrostomia.png #width=200px;margin=0 auto; "Por que que tenho uma Gastrostomia?")
