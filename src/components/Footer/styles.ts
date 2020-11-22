@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { Button } from 'react-bootstrap';
 import { MailOutline } from '@styled-icons/material';
 
@@ -10,6 +11,16 @@ export const Styles = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  ${ media.lessThan('medium')`
+    flex-direction: column-reverse;
+  `}
+
+  .buttons-margin {
+    ${ media.lessThan('medium')`
+      margin-bottom: 20px;
+    `}
+  }
 `;
 
 export const Container = styled.div`

@@ -17,6 +17,7 @@ export const Styles = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+  padding: 10px;
   margin-right: 40px;
   width: 200px;
   height: 200px;
@@ -34,11 +35,12 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
 `;
 
 export const Content = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
