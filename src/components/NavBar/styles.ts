@@ -7,6 +7,8 @@ import { Search } from '@styled-icons/heroicons-outline';
 export const Styles = styled.div`
   .navbar {
     display: flex;
+    justify-content: space-between;
+
     overflow: hidden;
     position: fixed;
     top: 0;

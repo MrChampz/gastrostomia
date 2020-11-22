@@ -13,7 +13,12 @@ import {
   SearchIcon
 } from './styles';
 
-export default function NavBar() {
+interface NavBarProps {
+  alwaysShowDownload: boolean;
+  showSearch: boolean;
+}
+
+export default function NavBar(props: NavBarProps) {
   const isSmallScreen = useMedia({ query: MediaQueries.medium });
 
   const [showLogo, setShowLogo] = useState(true);
@@ -58,23 +63,30 @@ export default function NavBar() {
         <Logo to="/" className={ showLogo ? 'show' : 'hide' }>
           Gastrostomia
         </Logo>
-        <Form className="form">
-          <SearchField
-            type="text"
-            placeholder="Comece digitando algo.."
-            onBlur={ onSearchFieldBlur }
-            onFocus={ onSearchFieldFocus }
-          />
-          <SearchButton>
-            <SearchIcon size={ 24 } />
-          </SearchButton>
-        </Form>
+        { props.showSearch &&
+          <Form className="form">
+            <SearchField
+              type="text"
+              placeholder="Comece digitando algo.."
+              onBlur={ onSearchFieldBlur }
+              onFocus={ onSearchFieldFocus }
+            />
+            <SearchButton>
+              <SearchIcon size={ 24 } />
+            </SearchButton>
+          </Form>
+        }
         <DownloadButton
           showIcon
-          showButton={ showBtnDownload }
+          showButton={ showBtnDownload || props.alwaysShowDownload }
           showContainer={ !isSmallScreen }
         />
       </Navbar>
     </Styles>
   );
+}
+
+NavBar.defaultProps = {
+  alwaysShowDownload: false,
+  showSearch: true,
 }

@@ -22,7 +22,7 @@ export default function Post(props) {
     <Styles>
       <GlobalStyles />
       <Container fluid>
-        <NavBar />
+        <NavBar alwaysShowDownload showSearch={ false } />
         <Pages>
           <Container>
             <Content>
