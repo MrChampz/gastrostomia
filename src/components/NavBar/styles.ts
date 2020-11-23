@@ -58,9 +58,11 @@ export const Styles = styled.div`
 `;
 
 export const Logo = styled(Link)`
+  height: 38px;
+
   font-family: 'Bebas Neue';
   font-size: 38px;
-  line-height: 0;
+  line-height: 44px;
   color: black;
 
   transition: max-width .4s cubic-bezier(1.0, 0.86, 0.0, 1.0);

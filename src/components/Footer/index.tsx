@@ -20,14 +20,14 @@ export default function Footer() {
         <Text>© { new Date().getFullYear() }</Text>
         <Link>Gastrostomia</Link>
       </Container>
-      <Container className="buttons-margin">
+      <Container className="buttons-container-margin">
         <MailButton>
           <MailIcon size={ 24 } />
         </MailButton>
-        <MailButton>
+        <MailButton className="buttons-margin">
           <MailIcon size={ 24 } />
         </MailButton>
-        <MailButton>
+        <MailButton className="buttons-margin">
           <MailIcon size={ 24 } />
         </MailButton>
       </Container>

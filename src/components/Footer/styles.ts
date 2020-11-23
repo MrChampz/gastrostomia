@@ -16,10 +16,14 @@ export const Styles = styled.div`
     flex-direction: column-reverse;
   `}
 
-  .buttons-margin {
+  .buttons-container-margin {
     ${ media.lessThan('medium')`
       margin-bottom: 20px;
     `}
+  }
+
+  .buttons-margin {
+    margin-left: 15px;
   }
 `;
 
@@ -58,7 +62,6 @@ export const MailIcon = styled(MailOutline)`
 
 export const MailButton = styled(Button)`
   padding: 0;
-  margin-left: 15px;
   width: 38px;
   height: 38px;
   border: none;

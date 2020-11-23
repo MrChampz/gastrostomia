@@ -9,7 +9,7 @@ export const Styles = styled.div`
   display: flex;
   flex-direction: row;
 
-  ${media.lessThan('medium')`
+  ${ media.lessThan('medium')`
     margin: 60px 0;
 
     flex-direction: column;
@@ -35,11 +35,11 @@ export const Content = styled.div`
     margin-left: auto;
     margin-top: -20px;
 
-    ${media.lessThan('medium')`
+    ${ media.lessThan('medium')`
       margin-top: 0;
       width: 100%;
 
-      button {
+      a {
         width: 100%;
       }
     `}
@@ -53,7 +53,7 @@ export const Title = styled.p`
   font-size: 35px;
   color: black;
 
-  ${media.lessThan('medium')`
+  ${ media.lessThan('medium')`
     margin-top: 0;
   `}
 `;
