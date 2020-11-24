@@ -19,6 +19,7 @@ export const Styles = styled.div`
 
 export const Image = styled.img`
   margin-left: 10px;
+  padding: 20px;
   width: 200px;
   height: 200px;
 `;
