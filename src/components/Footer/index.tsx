@@ -5,6 +5,7 @@ import {
   Container,
   Text,
   Link,
+  ExternLink,
   MailButton,
   MailIcon
 } from './styles';
@@ -14,20 +15,29 @@ export default function Footer() {
     <Styles>
       <Container>
         <Text>Criado por</Text>
-        <Link>UpCO</Link>
+        <ExternLink>UpCO</ExternLink>
       </Container>
       <Container>
         <Text>© { new Date().getFullYear() }</Text>
-        <Link>Gastrostomia</Link>
+        <Link to="/">Gastrostomia</Link>
       </Container>
       <Container className="buttons-container-margin">
-        <MailButton>
+        <MailButton
+          className="btn btn-primary"
+          href="mailto:sara.rrosado@hotmail.com"
+        >
           <MailIcon size={ 24 } />
         </MailButton>
-        <MailButton className="buttons-margin">
+        <MailButton
+          className="btn btn-primary buttons-margin"  
+          href="mailto:borboletasdafabi@gmail.com"
+        >
           <MailIcon size={ 24 } />
         </MailButton>
-        <MailButton className="buttons-margin">
+        <MailButton
+          className="btn btn-primary buttons-margin"  
+          href="mailto:marilucecostap@gmail.com"
+        >
           <MailIcon size={ 24 } />
         </MailButton>
       </Container>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { Button } from 'react-bootstrap';
 import { MailOutline } from '@styled-icons/material';
+import { Link as GatsbyLink } from 'gatsby';
 
 export const Styles = styled.div`
   height: 88px;
@@ -40,7 +40,23 @@ export const Text = styled.span`
   color: #6B6B6B;
 `;
 
-export const Link = styled.a`
+export const Link = styled(GatsbyLink)`
+  margin-left: 5px;
+
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  color: #6B6B6B;
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: #3D3D3D;
+  }
+`;
+
+export const ExternLink = styled.a`
   margin-left: 5px;
 
   font-family: 'Roboto';
@@ -60,7 +76,7 @@ export const MailIcon = styled(MailOutline)`
   color: #C4C4C4;
 `;
 
-export const MailButton = styled(Button)`
+export const MailButton = styled.a`
   padding: 0;
   width: 38px;
   height: 38px;
@@ -74,6 +90,14 @@ export const MailButton = styled(Button)`
 
   &:hover {
     background: #D1D1D1;    
+  }
+
+  &:focus, &:active {
+    background: #424242 !important;
+
+    -webkit-box-shadow: 0px 0px 1x 2px #d4d4d4 !important;
+    -moz-box-shadow: 0px 0px 1px 2px #d4d4d4 !important;
+    box-shadow: 0px 0px 1px 2px #d4d4d4 !important;
   }
 
   &:hover ${ MailIcon } {

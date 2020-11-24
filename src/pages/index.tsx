@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { graphql } from "gatsby";
 
 import { GlobalStyles, Styles, Page } from "../styles/Global/styles";
-import { NavBar, Footer, PostCard, DownloadCard } from "../components";
+import { NavBar, Footer, PostCard, DownloadCard, SEO } from "../components";
 
 export default function Index(props) {
   const { data } = props;
@@ -11,6 +11,7 @@ export default function Index(props) {
 
   return (
     <Styles>
+      <SEO title="Todos os posts" />
       <GlobalStyles />
       <Container fluid>
         <NavBar />

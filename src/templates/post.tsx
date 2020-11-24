@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import { NavBar, Footer } from '../components';
+import { NavBar, Footer, SEO } from '../components';
 
 import {
   Styles,
@@ -16,10 +16,13 @@ import {
 
 export default function Post(props) {
   const post = props.data.mdx;
-  const title = props.data.site.siteMetadata.title;
   
   return (
     <Styles>
+      <SEO
+        title={ post.frontmatter.title }
+        description={ post.frontmatter.description || post.excerpt }
+      />
       <GlobalStyles />
       <Container fluid>
         <NavBar alwaysShowDownload showSearch={ false } />
