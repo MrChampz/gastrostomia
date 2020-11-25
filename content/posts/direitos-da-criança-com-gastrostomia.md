@@ -15,6 +15,6 @@ date: 2020-11-21T06:49:38.322Z
 * Receber a dieta necessária para a nutrição da criança. Antes da alta, é de responsabilidade do médico e nutricionista preencher os documentos para que o responsável pela criança encaminhe, solicitando o recebimento da dieta sem custo. Entretanto, às vezes, este é um processo demorado. Em caso de dúvida, procure o assistente social da instituição.
 * Frequentar a escola, com atendimento educacional especializado, se necessário e com direito a um profissional de apoio escolar, que possa principalmente ajudar a criança com sua alimentação. 
 
-Além disso, com o **Decreto nº 5296,** de 02 de dezembro de 2004, a pessoa com gastrostomia passou a ser considerada como pessoa com deficiência física e possui direitos respaldados pela lei federal. Desta maneira, também é possível solicitar benefício da Lei Orgânica da Assistência Social (LOAS).
+Além disso, com o **Decreto nº 5296**, de 02 de dezembro de 2004, a pessoa com gastrostomia passou a ser considerada como pessoa com deficiência física e possui direitos respaldados pela lei federal. Desta maneira, também é possível solicitar benefício da Lei Orgânica da Assistência Social (LOAS).
 
-![Direitos da criança com gastrostomia](../assets/menino.png "Direitos da criança com gastrostomia")
+![Direitos da criança com gastrostomia](../assets/menino.png#width=400px;margin=0 auto "Direitos da criança com gastrostomia")
