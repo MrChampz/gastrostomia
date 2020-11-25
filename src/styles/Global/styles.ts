@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import media from 'styled-media-query';
 import { Container } from 'react-bootstrap';
+import { Link } from 'gatsby';
 
 export const GlobalStyles = createGlobalStyle`
   html, div {
@@ -52,4 +53,39 @@ export const Text = styled.p`
   font-family: 'Itim';
   font-size: 25px;
   color: black;
+`;
+
+export const NotFoundContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const NotFoundTitle = styled.p`
+  text-align: center;
+  font-family: 'Itim';
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+`;
+
+export const NotFoundText = styled.p`
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #6e6e6e;
+`;
+
+export const Emoji = styled.p`
+  font-family: 'Itim';
+  font-size: 60px;
+  color: black;
+`;
+
+export const Button = styled(Link)`
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 13px;
+  transition: all 0.1s ease-in;
 `;
