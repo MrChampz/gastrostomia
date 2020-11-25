@@ -18,4 +18,4 @@ Na escola é importante que os professores tenham conhecimento sobre a condiçã
 
 A criança deve ser acompanhada por uma equipe multiprofissional: médico, enfermeiro e nutricionista. Eles irão acompanhar crescimento, nutrição e cuidados com a sonda. Para isto seu médico tem que encaminhá-la ao serviço primário de saúde (posto de saúde).
 
-![Retorno das atividades: Lazer, Brincadeiras e Estudos](../assets/lazer_gastrostomia.png "Retorno das atividades: Lazer, Brincadeiras e Estudos")
+![Retorno das atividades: Lazer, Brincadeiras e Estudos](../assets/lazer_gastrostomia.png#width=400px;margin=0 auto "Retorno das atividades: Lazer, Brincadeiras e Estudos")
