@@ -37,11 +37,19 @@ export const Page = styled(Container)`
   margin-top: 100px;
 `;
 
-export const NotFoundContainer = styled.div`
+export const TextContainer = styled.div`
   flex: 1;
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const Text = styled.p`
+  margin-top: 40px;
+  margin-bottom: 300px;
+  font-family: 'Itim';
+  font-size: 25px;
+  color: black;
 `;

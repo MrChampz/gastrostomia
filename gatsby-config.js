@@ -51,14 +51,17 @@ module.exports = {
                   title
                   description
                   topic
+                  thumb {
+                    publicURL
+                  }
                 }
               }
             }
           }
         `,
         ref: "id",
-        index: ["title", "rawBody"],
-        store: ["id", "slug", "title", "excerpt", "description", "topic"],
+        index: ["title", "topic"],
+        store: ["id", "slug", "title", "excerpt", "description", "topic", "thumb"],
         normalizer: ({ data }) =>
           data.allMdx.nodes.map(node => ({
             id: node.id,
@@ -68,6 +71,7 @@ module.exports = {
             title: node.frontmatter.title,
             description: node.frontmatter.description,
             topic: node.frontmatter.topic,
+            thumb: node.frontmatter.thumb,
           })),
       },
     },

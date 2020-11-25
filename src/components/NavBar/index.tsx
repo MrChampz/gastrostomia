@@ -16,7 +16,6 @@ import {
 interface NavBarProps {
   alwaysShowDownload: boolean;
   showSearch: boolean;
-  onSearch?: (term: string) => void;
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -59,11 +58,6 @@ export default function NavBar(props: NavBarProps) {
     }
   }
 
-  const onSearch = () => {
-    if (searchTerm.trim() === '') return;
-    props.onSearch && props.onSearch(searchTerm);
-  }
-
   return (
     <Styles>
       <Navbar expand="lg" className={ showShadow ? 'shadow' : 'no-shadow' }>
@@ -72,6 +66,7 @@ export default function NavBar(props: NavBarProps) {
         </Logo>
         { props.showSearch &&
           <Form className="form">
+            <Form.Control type="hidden" name="search" value={ searchTerm } />
             <SearchField
               type="text"
               placeholder="Comece digitando algo.."
@@ -79,7 +74,7 @@ export default function NavBar(props: NavBarProps) {
               onFocus={ onSearchFieldFocus }
               onChange={ event => setSearchTerm(event.target.value) }
             />
-            <SearchButton onClick={ onSearch }>
+            <SearchButton type="submit">
               <SearchIcon size={ 24 } />
             </SearchButton>
           </Form>

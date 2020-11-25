@@ -11,18 +11,15 @@ import {
 } from './styles';
 
 export default function PostCard({ post }) {
-  const link = `/posts${ post.fields.slug }`;
-  const data = post.frontmatter;
-
   return (
     <Styles>
       <ImageContainer>
-        <Image src={ data.thumb.publicURL } alt={ data.title } />
+        <Image src={ post.thumb.publicURL } alt={ post.title } />
       </ImageContainer>
       <Content>
-        <Topic>{ data.topic }</Topic>
-        <Title to={ link }>{ data.title }</Title>
-        <Description>{ data.description }</Description>
+        <Topic>{ post.topic }</Topic>
+        <Title to={ `/posts${ post.slug }` }>{ post.title }</Title>
+        <Description>{ post.description }</Description>
       </Content>
     </Styles>
   );
