@@ -13,7 +13,7 @@ date: 2020-11-21T03:06:33.245Z
 * Se a criança tiver *botton*, encaixar sua extensão para administrar a dieta, sempre higienizando com água filtrada após o uso, mantendo em local seco e limpo. 
 * Mantenha a criança sentada ou com travesseiro nas costas, com a cabeceira da cama elevada sempre que a dieta, água ou medicação estiverem sendo administradas, para evitar episódios de enjoo ou vômito.
 
-![Cuidados na Administração da dieta, água e medicamentos](../assets/cuidados_na_administracao_de_dietas_agua_e_medicamentos.png "Cuidados na Administração da dieta, água e medicamentos")
+![Cuidados na Administração da dieta, água e medicamentos](../assets/cuidados_na_administracao_de_dietas_agua_e_medicamentos.png#width=400px;margin=0 auto "Cuidados na Administração da dieta, água e medicamentos")
 
 * A dieta por gotejamento ou por seringa deve ser administrada lentamente para evitar diarréia, aumento abdominal (distensão abdominal) e vômitos. 
 * Quando terminar a infusão da dieta, mantenha a criança nesta posição por cerca de 40 minutos para evitar vômitos e/ou refluxo (regurgitação) da dieta.
