@@ -25,8 +25,23 @@ export const Styles = styled.div`
       max-width: 100%;
     `}
   }
+
+  .fixed-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
 `;
 
 export const Page = styled(Container)`
   margin-top: 100px;
+`;
+
+export const NotFoundContainer = styled.div`
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

@@ -10,9 +10,9 @@ import {
   MailIcon
 } from './styles';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <Styles>
+    <Styles { ...props }>
       <Container>
         <Text>Criado por</Text>
         <ExternLink>UpCO</ExternLink>

@@ -16,6 +16,7 @@ import {
 interface NavBarProps {
   alwaysShowDownload: boolean;
   showSearch: boolean;
+  onSearch?: (term: string) => void;
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -24,6 +25,7 @@ export default function NavBar(props: NavBarProps) {
   const [showLogo, setShowLogo] = useState(true);
   const [showBtnDownload, setShowBtnDownload] = useState(false);
   const [showShadow, setShowShadow] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     window.onscroll = onPageScroll;
@@ -57,6 +59,11 @@ export default function NavBar(props: NavBarProps) {
     }
   }
 
+  const onSearch = () => {
+    if (searchTerm.trim() === '') return;
+    props.onSearch && props.onSearch(searchTerm);
+  }
+
   return (
     <Styles>
       <Navbar expand="lg" className={ showShadow ? 'shadow' : 'no-shadow' }>
@@ -70,8 +77,9 @@ export default function NavBar(props: NavBarProps) {
               placeholder="Comece digitando algo.."
               onBlur={ onSearchFieldBlur }
               onFocus={ onSearchFieldFocus }
+              onChange={ event => setSearchTerm(event.target.value) }
             />
-            <SearchButton>
+            <SearchButton onClick={ onSearch }>
               <SearchIcon size={ 24 } />
             </SearchButton>
           </Form>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from "react-bootstrap";
 
-import { GlobalStyles, Styles, Page } from "../styles/Global/styles";
+import { GlobalStyles, Styles, Page, NotFoundContainer } from "../styles/Global/styles";
 import { NavBar, Footer, SEO } from "../components";
 
 export default function NotFound() {
@@ -10,11 +10,13 @@ export default function NotFound() {
       <SEO title="Página não encontrada" />
       <GlobalStyles />
       <Container fluid>
-        <NavBar showSearch={ false } />
+        <NavBar showSearch={ false } alwaysShowDownload />
         <Page>
-          <h1>Página não encontrada =(</h1>
+          <NotFoundContainer>
+            <h1>Página não encontrada =(</h1>
+          </NotFoundContainer>
         </Page>
-        <Footer />
+        <Footer className="fixed-footer" />
       </Container>
     </Styles>
   );
