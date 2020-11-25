@@ -50,7 +50,7 @@ export const Content = styled.div`
 export const Title = styled.p`
   margin-top: 20px;
 
-  font-family: 'Bebas Neue';
+  font-family: 'Itim';
   font-size: 35px;
   color: black;
 
