@@ -16,4 +16,4 @@ Entre as complicações mais comuns estão: 
 * Caso a pele esteja com alguma lesão, ou ocorra vazamento persistente de dieta pelo orifício do cateter, encaminhar a criança ao médico para tratamento.
 * Nunca utilize cremes, pomadas ou medicações por conta própria (somente com orientação médica ou do enfermeiro estomaterapeuta).
 
-![Complicações ](../assets/complicações.png "Complicações ")
+![Complicações ](../assets/complicações.png#width=400px;margin=0 auto "Complicações ")
