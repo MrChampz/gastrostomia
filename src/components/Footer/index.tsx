@@ -4,11 +4,13 @@ import { Button, Modal } from 'react-bootstrap';
 import {
   Styles,
   Container,
+  Title,
   Text,
   Link,
   CreditsButton,
   MailButton,
-  MailIcon
+  MailIcon,
+  ModalContent
 } from './styles';
 
 export default function Footer(props) {
@@ -56,20 +58,22 @@ export default function Footer(props) {
         aria-labelledby="contained-modal-title-vcenter"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Créditos</Modal.Title>
+          <Title>Créditos</Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Conteúdo</h4>
-          Mariluce Costa Pereira
-          Sara Rodrigues Rosado
-          <h4>Ilustrações</h4>
-          Daniela Leme dos Santos
-          <h4>Design</h4>
-          Aline Sousa Lima
-          Catharina Borba da Silva
-          Felipe Vieira Maciel de Souza
-          <h4>Programação</h4>
-          Felipe Vieira Maciel de Souza
+          <ModalContent>
+            <Title>Conteúdo</Title>
+            <Text>Mariluce Costa Pereira</Text>
+            <Text className="content-margin">Sara Rodrigues Rosado</Text>
+            <Title>Ilustrações</Title>
+            <Text className="content-margin">Daniela Leme dos Santos</Text>
+            <Title>Design</Title>
+            <Text>Aline Sousa Lima</Text>
+            <Text>Catharina Borba da Silva</Text>
+            <Text className="content-margin">Felipe Vieira Maciel de Souza</Text>
+            <Title>Programação</Title>
+            <Text>Felipe Vieira Maciel de Souza</Text>
+          </ModalContent>
         </Modal.Body>
       </Modal>
     </>

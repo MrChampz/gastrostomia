@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { Button } from 'react-bootstrap';
 import { MailOutline } from '@styled-icons/material';
 import { Link as GatsbyLink } from 'gatsby';
 
@@ -44,6 +43,13 @@ export const Text = styled.span`
   font-family: 'Roboto';
   font-size: 16px;
   color: #6B6B6B;
+`;
+
+export const Title = styled.span`
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  color: #404040;
 `;
 
 export const Link = styled(GatsbyLink)`
@@ -113,5 +119,16 @@ export const MailButton = styled.a`
 
   &:hover ${MailIcon} {
     color: #B0B0B0;
+  }
+`;
+
+export const ModalContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content-margin {
+    margin-bottom: 10px;
   }
 `;
