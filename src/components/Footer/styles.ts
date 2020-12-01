@@ -25,6 +25,30 @@ export const Styles = styled.div`
   .buttons-margin {
     margin-left: 15px;
   }
+
+  .left-container {
+    justify-content: flex-start;
+
+    ${media.lessThan('medium')`
+      justify-content: center;
+    `}
+  }
+
+  .center-container {
+    justify-content: center;
+
+    ${media.lessThan('medium')`
+      justify-content: center;
+    `}
+  }
+
+  .right-container {
+    justify-content: flex-end;
+
+    ${media.lessThan('medium')`
+      justify-content: center;
+    `}
+  }
 `;
 
 export const Container = styled.div`
@@ -33,7 +57,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
+  
   ${media.lessThan('medium')`
     justify-content: center;
   `}
