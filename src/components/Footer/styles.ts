@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import { Button } from 'react-bootstrap';
 import { MailOutline } from '@styled-icons/material';
 import { Link as GatsbyLink } from 'gatsby';
 
@@ -12,12 +13,12 @@ export const Styles = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  ${ media.lessThan('medium')`
+  ${media.lessThan('medium')`
     flex-direction: column-reverse;
   `}
 
   .buttons-container-margin {
-    ${ media.lessThan('medium')`
+    ${media.lessThan('medium')`
       margin-bottom: 20px;
     `}
   }
@@ -28,10 +29,15 @@ export const Styles = styled.div`
 `;
 
 export const Container = styled.div`
+  min-width: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
+  ${media.lessThan('medium')`
+    justify-content: center;
+  `}
 `;
 
 export const Text = styled.span`
@@ -56,19 +62,24 @@ export const Link = styled(GatsbyLink)`
   }
 `;
 
-export const ExternLink = styled.a`
+export const CreditsButton = styled.button`
+  padding: 0;
   margin-left: 5px;
 
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 16px;
   color: #6B6B6B;
-
-  cursor: pointer;
+  background: none;
+  border: none;
 
   &:hover {
-    text-decoration: none;
     color: #3D3D3D;
+  }
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: none;
   }
 `;
 
@@ -100,7 +111,7 @@ export const MailButton = styled.a`
     box-shadow: 0px 0px 1px 2px #d4d4d4 !important;
   }
 
-  &:hover ${ MailIcon } {
+  &:hover ${MailIcon} {
     color: #B0B0B0;
   }
 `;

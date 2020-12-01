@@ -18,7 +18,7 @@ export const Styles = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background: #FAFAFA;
+    background: white;
     border-bottom: 1px solid #EBEBEB;
 
     transition: all 0.1s ease-in;

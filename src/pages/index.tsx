@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { useFlexSearch } from "react-use-flexsearch";
 import * as queryString from "query-string";
 
-import { GlobalStyles, Styles, Page, TextContainer, Text } from "../styles/Global/styles";
+import { Styles, Page, TextContainer, Text } from "../styles/Global/styles";
 import { NavBar, Footer, PostCard, DownloadCard, SEO } from "../components";
 
 export default function Index(props) {
@@ -31,7 +31,6 @@ export default function Index(props) {
   return (
     <Styles>
       <SEO title="Todos os posts" />
-      <GlobalStyles />
       <Container fluid>
         <NavBar />
         <Page>

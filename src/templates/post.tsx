@@ -7,7 +7,6 @@ import { NavBar, Footer, SEO } from '../components';
 
 import {
   Styles,
-  GlobalStyles,
   Pages,
   Content,
   Title,
@@ -23,7 +22,6 @@ export default function Post(props) {
         title={ post.frontmatter.title }
         description={ post.frontmatter.description || post.excerpt }
       />
-      <GlobalStyles />
       <Container fluid>
         <NavBar alwaysShowDownload showSearch={ false } />
         <Pages>
