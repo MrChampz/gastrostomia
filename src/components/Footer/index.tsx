@@ -10,7 +10,8 @@ import {
   CreditsButton,
   MailButton,
   MailIcon,
-  ModalContent
+  ModalContent,
+  ExternLink
 } from './styles';
 
 export default function Footer(props) {
@@ -70,9 +71,21 @@ export default function Footer(props) {
             <Title>Design</Title>
             <Text>Aline Sousa Lima</Text>
             <Text>Catharina Borba da Silva</Text>
-            <Text className="content-margin">Felipe Vieira Maciel de Souza</Text>
+            <ExternLink
+              href="https://www.linkedin.com/in/felpsmac"
+              target="_blank"
+              className="content-margin"
+            >
+              Felipe Vieira Maciel de Souza
+            </ExternLink>
             <Title>Programação</Title>
-            <Text>Felipe Vieira Maciel de Souza</Text>
+            <ExternLink
+              href="https://www.linkedin.com/in/felpsmac"
+              target="_blank"
+              className="content-margin"
+            >
+              Felipe Vieira Maciel de Souza
+            </ExternLink>
           </ModalContent>
         </Modal.Body>
       </Modal>

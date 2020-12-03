@@ -68,6 +68,17 @@ export const Link = styled(GatsbyLink)`
   }
 `;
 
+export const ExternLink = styled.a`
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #6B6B6B;
+
+  &:hover {
+    text-decoration: none;
+    color: #3D3D3D;
+  }
+`;
+
 export const CreditsButton = styled.button`
   padding: 0;
   margin-left: 5px;
