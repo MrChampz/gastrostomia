@@ -23,14 +23,14 @@ export default function Footer(props) {
   return (
     <>
       <Styles { ...props }>
-        <Container className="justify-content-start">
+        <Container className="left-container">
           <CreditsButton onClick={ handleModalShow }>Créditos</CreditsButton>
         </Container>
-        <Container className="justify-content-center">
+        <Container className="center-container">
           <Text>© { new Date().getFullYear() }</Text>
           <Link to="/">Gastrostomia</Link>
         </Container>
-        <Container className="justify-content-end buttons-container-margin">
+        <Container className="right-container buttons-container-margin">
           <MailButton
             className="btn btn-primary"
             href="mailto:sara.rrosado@hotmail.com"
